@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        <div className="container-fluid">
+        <div className="container-fluid d-flex">
           <a className="navbar-brand" href="#">
             {" "}
             <img className="logo" src={logo} alt="Logo" />{" "}
