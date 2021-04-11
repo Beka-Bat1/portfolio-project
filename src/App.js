@@ -8,6 +8,12 @@ import Content from "./components/Content";
 import Carousel from './components/Carousel'
 import Modal from 'react-modal';
 import digitalMenuAppimage from './static/images/digital-menu.jpeg';
+import burgerBuilderImage from './static/images/burger-builder.jpg'
+import nintendoTasksImage from './static/images/nintendo-tasks.jpg'
+import quoteMachineImage from './static/images/quote-machine.jpg'
+import starterProjectImage from './static/images/react-starter-project.jpg'
+import telegramCloneImage from './static/images/telegram-clone.jpg'
+
 
 const customStyle = {
   content : {
@@ -34,10 +40,6 @@ function App() {
     setIsOpen(true);
   }
 
-  const afterOpenModal = () => {
-    subtitle.style.color = '#f00';
-  }
-
   const closeModal = () => {
     setIsOpen(false)
   }
@@ -48,18 +50,47 @@ function App() {
       title: 'Digital Menu',
       text: 'Scan Restaurant Menu with QR code',
       projectLink: ''
+    },
+    {
+      image: burgerBuilderImage,
+      title: 'Burger Builder App',
+      text: 'In app you can build your favourite burger and order it now!',
+      projectLink: ''
+    },
+    {
+      image: nintendoTasksImage,
+      title: 'Nintendo Themed Tasks',
+      text: 'Add, check and remove any task you want to do today ...',
+      projectLink: ''
+    },
+    {
+      image: quoteMachineImage,
+      title: 'Quote Machine',
+      text: 'Randomly read most known and wiseful quotes',
+      projectLink: ''
+    },
+    {
+      image: starterProjectImage,
+      title: 'Starter Project in React',
+      text: 'Shop the furniture :) ',
+      projectLink: ''
+    },
+    {
+      image: telegramCloneImage,
+      title: 'Telegram Clone',
+      text: 'clone of Telegram chat, try it now',
+      projectLink: ''
     }
   ]
 
   let modal = (
     <Modal 
           isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyle}
           contentLabel="Example Modal"
         >
-          <h2 ref={_subtitle => (subtitle = _subtitle)}>{modalContent.title}</h2>
+          <h2>{modalContent.title}</h2>
           <div>{modalContent.text}</div>
           <img className="img-fluid" src={modalContent.image} alt="sheep" />
           <div className="d-md-flex justify-content-md-end">
