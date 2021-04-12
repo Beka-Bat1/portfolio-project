@@ -13,7 +13,7 @@ import nintendoTasksImage from './static/images/nintendo-tasks.jpg'
 import quoteMachineImage from './static/images/quote-machine.jpg'
 import starterProjectImage from './static/images/react-starter-project.jpg'
 import telegramCloneImage from './static/images/telegram-clone.jpg'
-
+import Certificates from "./components/Certificates";
 
 const customStyle = {
   content : {
@@ -49,13 +49,13 @@ function App() {
       image: digitalMenuAppimage,
       title: 'Digital Menu',
       text: 'Scan Restaurant Menu with QR code',
-      projectLink: ''
+      projectLink: 'https://github.com/Beka-Bat1/digital-menu-react'
     },
     {
       image: burgerBuilderImage,
       title: 'Burger Builder App',
       text: 'In app you can build your favourite burger and order it now!',
-      projectLink: ''
+      projectLink: 'https://github.com/Beka-Bat1/burger-builder-app'
     },
     {
       image: nintendoTasksImage,
@@ -91,7 +91,10 @@ function App() {
           contentLabel="Example Modal"
         >
           <h2>{modalContent.title}</h2>
+        <div className="container d-flex justify-content-between my-4">
           <div>{modalContent.text}</div>
+          <a href={modalContent.projectLink} target="_blank"><i class="fas fa-external-link-alt text-primary"></i> Open on Github</a>
+        </div>
           <img className="img-fluid" src={modalContent.image} alt="sheep" />
           <div className="d-md-flex justify-content-md-end">
             <button className='btn btn-primary pull-right' onClick={closeModal}>close</button>
@@ -130,6 +133,7 @@ function App() {
       openModal={openModal}
       storage={storage}
        />
+       <Certificates />
       <div className="container my-5">
         {modal}
       </div>
