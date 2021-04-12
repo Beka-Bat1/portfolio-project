@@ -154,7 +154,7 @@ nav ul li {
 #content-section{
   position: relative !important;
   width: 100%;
-  height: 100vh !important;
+  height: 90vh !important;
   background-color: var(--primary-gray) ;
   color: var(--primary-orange);
 }
@@ -179,7 +179,7 @@ nav ul li {
 
 .view {
   width: 100%;
-  height: 200px;
+  height: 250px;
   margin: 10px;
   float: left;
   border: 10px solid #fff;
@@ -193,7 +193,7 @@ nav ul li {
 
 .view .mask, .view .content {
   width: 100%;
-  height: 200px;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -214,7 +214,7 @@ nav ul li {
   margin: 20px 0 0 0
 }
 .view p {
-  font-family: Georgia, serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 12px;
   position: relative;
@@ -222,16 +222,18 @@ nav ul li {
   padding: 10px 20px 20px;
   text-align: center
 }
-.view a.info {
-  display: inline-block;
+.view button.info {
+  display: block;
+  top: 70%;
   text-decoration: none;
   padding: 7px 14px;
+  width: 60%;
   background: var(--primary-gray);
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 0 1px var(--primary-gray)
 }
-.view a.info:hover {
+.view button.info:hover {
   box-shadow: 0 0 5px var(--primary-gray)
 }
 

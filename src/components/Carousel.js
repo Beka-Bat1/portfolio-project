@@ -4,7 +4,7 @@ import digitalMenuAppimage from "../static/images/digital-menu.jpeg";
 const Carousel = (props) => {
   return (
     <>
-      <div className="container-fluid carousel">
+      <div className="container-fluid carousel" id="portfolio">
         <h1 className="text-center py-5"> Projects </h1>
         <div className="row d-flex flex-wrap">
           {props.storage.map((project, key) => (
@@ -14,18 +14,19 @@ const Carousel = (props) => {
                 <div className="mask">
                   <h2>{project.title}</h2>
                   <p>{project.text}</p>
-                  <a
+                  <div className="row d-flex justify-content-center">
+                  <button
                     onClick={() => props.openModal(project)}
                     className="info"
                     id="centered-toggle-button"
                   >
                     View Image
-                  </a>
+                  </button>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </>
