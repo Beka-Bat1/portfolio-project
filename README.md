@@ -12,8 +12,7 @@ You will also see any lint errors in the console.
 
 ## Portfolio
 
-<img align="center" src="![portfolio](https://user-images.githubusercontent.com/62855343/114531998-755f3f00-9c5d-11eb-843f-1232ad7085d1.jpg)
-">
+<img align="center" src="portfolio.jpg">
 
 <h1 align="center">Hi 👋, I'm Beka Batmanashvili</h1>
 <h3 align="center">A passionate frontend developer from Georgia, Tbilisi.</h3>
