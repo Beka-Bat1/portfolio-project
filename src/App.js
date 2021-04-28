@@ -61,25 +61,25 @@ function App() {
       image: nintendoTasksImage,
       title: 'Nintendo Themed Tasks',
       text: 'Add, check and remove any task you want to do today ...',
-      projectLink: ''
+      projectLink: 'https://codepen.io/your-work/?cursor=ZD0xJm89MCZwPTEmdj00OTQ4OTA3Mg=='
     },
     {
       image: quoteMachineImage,
       title: 'Quote Machine',
       text: 'Randomly read most known and wiseful quotes',
-      projectLink: ''
+      projectLink: 'https://codepen.io/your-work/?cursor=ZD0xJm89MCZwPTEmdj00OTQ4OTA3Mg=='
     },
     {
       image: starterProjectImage,
       title: 'Starter Project in React',
       text: 'Shop the furniture :) ',
-      projectLink: ''
+      projectLink: 'https://codepen.io/your-work/?cursor=ZD0xJm89MCZwPTEmdj00OTQ4OTA3Mg=='
     },
     {
       image: telegramCloneImage,
       title: 'Telegram Clone',
       text: 'clone of Telegram chat, try it now',
-      projectLink: ''
+      projectLink: 'https://codepen.io/your-work/?cursor=ZD0xJm89MCZwPTEmdj00OTQ4OTA3Mg=='
     }
   ]
 
